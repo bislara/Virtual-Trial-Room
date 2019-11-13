@@ -10,9 +10,9 @@ In recent years, there is an increasing demand for online shopping for fashion i
 3. Virtual Fitting<br>
 </b>
 
-Open the [trial room](https://github.com/bislara/Virtuall-Trial-Room/tree/master/trial%20room)  folder for more details.
+Open the [trial room](https://github.com/bislara/Virtual-Trial-Room/tree/master/Tryy-On)  folder for more details.
 
-Also we have worked on 3D vision and pose estimation using monocamera. For more details open the [Real-Time-Pose-Estimation](https://github.com/bislara/Virtuall-Trial-Room/tree/master/Real-Time-Pose-Estimation) folder. 
+Also we have worked on 3D vision and pose estimation using monocamera. For more details open the [Real-Time-Pose-Estimation](https://github.com/bislara/Virtual-Trial-Room/tree/master/Size-Fit/Real-Time-Action-Recognition-with-gui) folder. 
 
 We couldn't upload this to server as our storage requirements for models were more than 2.5GB and also we needed some powerful server, more than which was given in free suscription of AWS/Azure.
 

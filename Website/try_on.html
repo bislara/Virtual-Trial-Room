@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hackathon</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Hackathon Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/display.css">
+<style>
+.dropbtn {
+  background-color: #1b1011;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 35px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #1b1011;}
+</style>
+
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+
+		<!-- Top Bar -->
+
+		<div class="top_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col d-flex flex-row">
+						<div class="phone">+91 9778756623</div>
+						<div class="social">
+							<ul class="social_list">
+								<li class="social_list_item"><a href="https://www.facebook.com/biswajeet.sahoo.lara"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li class="social_list_item"><a href="https://www.instagram.com/bis_lara/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li class="social_list_item"><a href="https://www.linkedin.com/in/biswajeet-sahoo-172329171/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="user_box ml-auto">
+							<div class="user_box_login user_box_link"><a href="#">login</a></div>
+							<div class="user_box_register user_box_link"><a href="#">register</a></div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		<!-- Main Navigation -->
+
+		<nav class="main_nav">
+			<div class="container">
+				<div class="row">
+					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+						<div class="logo_container">
+							<div class="logo"><a href="#"><img src="images/logo.png" alt="">Hackathon</a></div>
+						</div>
+						<div class="main_nav_container ml-auto">
+							<ul class="main_nav_list">
+								<li class="main_nav_item"><a href="index.html">home</a></li>
+								<li class="main_nav_item"><a href="index.html#about">about us</a></li>
+								
+								<li class="main_nav_item"><a href="index.html#contact">contact</a></li>
+							</ul>
+						</div>
+						<div class="content_search ml-lg-0 ml-auto">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="17px" height="17px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<g>
+									<g>
+										<g>
+											<path class="mag_glass" fill="#FFFFFF" d="M78.438,216.78c0,57.906,22.55,112.343,63.493,153.287c40.945,40.944,95.383,63.494,153.287,63.494
+											s112.344-22.55,153.287-63.494C489.451,329.123,512,274.686,512,216.78c0-57.904-22.549-112.342-63.494-153.286
+											C407.563,22.549,353.124,0,295.219,0c-57.904,0-112.342,22.549-153.287,63.494C100.988,104.438,78.439,158.876,78.438,216.78z
+											M119.804,216.78c0-96.725,78.69-175.416,175.415-175.416s175.418,78.691,175.418,175.416
+											c0,96.725-78.691,175.416-175.416,175.416C198.495,392.195,119.804,313.505,119.804,216.78z"/>
+										</g>
+									</g>
+									<g>
+										<g>
+											<path class="mag_glass" fill="#FFFFFF" d="M6.057,505.942c4.038,4.039,9.332,6.058,14.625,6.058s10.587-2.019,14.625-6.058L171.268,369.98
+											c8.076-8.076,8.076-21.172,0-29.248c-8.076-8.078-21.172-8.078-29.249,0L6.057,476.693
+											C-2.019,484.77-2.019,497.865,6.057,505.942z"/>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</div>
+
+						<form id="search_form" class="search_form bez_1">
+							<input type="search" class="search_content_input bez_1">
+						</form>
+
+						<div class="hamburger">
+							<i class="fa fa-bars trans_200"></i>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</nav>
+
+	</header>
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+			<div class="menu_close_container"><div class="menu_close"></div></div>
+			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<ul>
+				<li class="menu_item"><a href="index.html">home</a></li>
+				<li class="menu_item"><a href="index.html/#about">about us</a></li>
+				<li class="menu_item"><a href="index.html/#contact">contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		
+		<!-- Home Slider -->
+
+		<div class="home_slider_container">
+			
+			<div class="owl-carousel owl-theme home_slider">
+
+				<!-- Slider Item -->
+				<div class="owl-item home_slider_item">
+					<!-- Image by https://unsplash.com/@anikindimitry -->
+					<div class="home_slider_background" style="background-image:url(images/3.webp)"></div>
+
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+							<h1>New</h1>
+							<h1>Shopping Experience</h1>
+							
+						</div>
+					</div>
+				</div>
+
+				
+
+			</div>
+			
+		
+			
+			<!-- Home Slider Nav - Next -->
+		
+			
+		</div>
+
+	</div>
+
+
+
+	<!-- CTA -->
+
+	<div class="cta">
+		<!-- Image by https://unsplash.com/@thanni -->
+		<div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col">
+
+					<!-- CTA Slider -->
+
+					<div class="cta_slider_container">
+						<div class="owl-carousel owl-theme cta_slider">
+
+							<!-- CTA Slider Item -->
+							<div class="owl-item cta_item text-center">
+								<div class="cta_title" style="padding-bottom: 8vh;">TRY ON</div>
+								<div class="row">
+
+
+								<div class="col-md-4">
+
+								<div class="dropdown">
+								  <button class="dropbtn" id="user_btn">Select Person</button>
+								  <div class="dropdown-content">
+								    <button id="user1"><img src="images/u1.png" style="height: 15vh;width: 15vw;">Link 1</button>
+								    <button id="user2"><img src="images/u2.png" style="height: 15vh;width: 15vw;">Link 2</button>
+								    <button id="user3"><img src="images/u3.png" style="height: 15vh;width: 15vw;">Link 3</button>
+								 	<button id="user4"><img src="images/u4.png" style="height: 15vh;width: 15vw;">Link 4</button>
+								    <button id="user5"><img src="images/u5.png" style="height: 15vh;width: 15vw;">Link 5</button>
+								  </div>
+								</div>
+								<div class="pic">
+									<img src="images/u1.png"  style="padding-top: 5vh;">
+									<p style="color: black;">1st user</p>
+								</div>
+								<div class="pic2">
+									<img src="images/u2.png" style="padding-top: 5vh;">
+									<p style="color: black;">2nd user</p>
+								</div>
+								<div class="pic3">
+									<img src="images/u3.png" style="padding-top: 5vh;">
+									<p style="color: black;">3rd user</p>
+								</div>
+								<div class="pic4">
+									<img src="images/u4.png" style="padding-top: 5vh;">
+									<p style="color: black;">4th user</p>
+								</div>
+								<div class="pic5">
+									<img src="images/u5.png" style="padding-top: 5vh;">
+									<p style="color: black;">5th user</p>
+								</div>
+							</div>
+
+
+								<div class="col-md-4">
+									<center>
+									<h3 style="color: black;">Select Dress</h3>
+									<br>
+
+									<button class="dress1"><img src="images/d1.png" id="d1" style="padding-top: 5vh;"><br>
+									<p style="color: black;">Dress 1 &nbsp;&nbsp;Price:1000</p>
+									</button>
+									<button class="dress2">
+									<img src="images/d2.png" id="d2" style="padding-top: 5vh;"><br>
+									<p style="color: black;">Dress 2 &nbsp;&nbsp;Price:2000</p>
+									</button>
+									<button class="dress3">
+									<img src="images/d3.png" id="d3" style="padding-top: 5vh;"><br>
+									<p style="color: black;">Dress 3 &nbsp;&nbsp;Price:3000</p>
+									</button>
+									<button class="dress4">
+									<img src="images/d4.png" id="d4" style="padding-top: 5vh;"><br>
+									<p style="color: black;">Dress 4 &nbsp;&nbsp;Price:4000</p>
+									</button>
+									<button class="dress5">
+									<img src="images/d5.png" id="d5" style="padding-top: 5vh;"><br>
+									<p style="color: black;">Dress 5 &nbsp;&nbsp;Price:5000</p>
+									</button>
+
+									</center>
+								</div>
+								<div class="col-md-4">
+								  	<button class="dropbtn" id="try_on" style="width: 14vw;">Try On</button>
+								  	<br>
+								  	<div class="t1" style="color: red;padding-top: 7vh;"></div>
+									<img src="images/f1.png" class="f1" style="padding-top: 5vh;">
+									<img src="images/f2.png" class="f2" style="padding-top: 5vh;">
+									<img src="images/f3.png" class="f3" style="padding-top: 5vh;">
+									<img src="images/f4.png" class="f4" style="padding-top: 5vh;">
+									<img src="images/f5.png" class="f5" style="padding-top: 5vh;">
+									<br>
+								  	<button class="dropbtn add_cart" style="width: 14vw;background-color: #d62f3e;">Add to Cart</button>
+
+
+								</div>
+								</div><br>
+
+
+								<center>
+								<div class="button cta_button"><div class="button_bcg"></div><a id="show_all">Reset</a></div>
+								</center>
+							
+
+							
+						</div>
+
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+					
+	</div>
+</div>
+
+		
+	<!-- Footer -->
+<section id="contact">
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer Column -->
+				<div class="col-lg-4 footer_column">
+					<div class="footer_col">
+						<div class="footer_content footer_about">
+							<div class="logo_container footer_logo">
+								<div class="logo"><a href="#"><img src="images/logo.png" alt="">Hackathon</a></div>
+							</div>
+							<p class="footer_about_text"><h2><b>You can also download the app</b></h2><br><br>
+							We are Team hack from NIT Rourkela</p>
+							<ul class="footer_social_list">
+								<li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			
+
+				<!-- Footer Column -->
+				<div class="col-lg-4 footer_column">
+					<div class="footer_col">
+						<div class="footer_title">tags</div>
+						<div class="footer_content footer_tags">
+							<ul class="tags_list clearfix">
+								<li class="tag_item"><a href="#">design</a></li>
+								<li class="tag_item"><a href="#">fashion</a></li>
+								<li class="tag_item"><a href="#">machine learning</a></li>
+								<li class="tag_item"><a href="#">trial room</a></li>
+								<li class="tag_item"><a href="#">hackathon</a></li>
+								<li class="tag_item"><a href="#">myntra</a></li>
+								<li class="tag_item"><a href="#">jabong</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer Column -->
+				<div class="col-lg-4 footer_column">
+					<div class="footer_col">
+						<center><img src="images/logo_hack.png" style="width: 17vw;">
+							<h3 style="color: white;padding-bottom: 5vh;">We wear Intelligence</h3></center>
+						<div class="footer_title">contact info</div>
+						<div class="footer_content footer_contact">
+							<ul class="contact_info_list">
+								<li class="contact_info_item d-flex flex-row">
+									<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div class="contact_info_text">Biswajeet Sahoo<br>NIT Rourkela</div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+									<div class="contact_info_text">+91 9778756623</div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">biswajeetsahoo54@gmail.com</a></div>
+								</li>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+</section>
+	<!-- Copyright -->
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 order-lg-1 order-2  ">
+					<div class="copyright_content d-flex flex-row align-items-center">
+						<div><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+					</div>
+				</div>
+				<div class="col-lg-9 order-lg-2 order-1">
+					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
+						<div class="footer_nav">
+							<ul class="footer_nav_list">
+								<li class="footer_nav_item"><a href="#">home</a></li>
+								<li class="footer_nav_item"><a href="index.html#about">about us</a></li>
+								<!-- <li class="footer_nav_item"><a href="offers.html">offers</a></li> -->
+								<!-- <li class="footer_nav_item"><a href="blog.html">news</a></li> -->
+								<li class="footer_nav_item"><a href="index.html#contact">contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+<script>
+
+	$(".pic").hide();
+	$(".pic2").hide();
+	$(".pic3").hide();
+	$(".pic4").hide();
+	$(".pic5").hide();
+
+	$(".f1").hide();
+	$(".f2").hide();
+	$(".f3").hide();
+	$(".f4").hide();
+	$(".f5").hide();
+
+	$(".add_cart").hide();
+
+
+
+	 var u1=0;
+	 var u2=0;
+	 var u3=0;
+	 var u4=0;
+	 var u5=0;
+
+
+	 var d1=0;
+	 var d2=0;
+	 var d3=0;
+	 var d4=0;
+	 var d5=0;
+
+
+// $(document).on("click", "#user_btn", function () {
+	document.querySelector("#user1").addEventListener("click", function () {
+
+		u1=1;
+		u2=0;
+		u3=0;
+		u4=0;
+		u5=0;
+		$(".pic").css("display","block");
+		$(".pic2").hide();
+		$(".pic3").hide();
+		$(".pic4").hide();
+		$(".pic5").hide();
+
+		
+	});
+
+	$("#user2").click(function () {
+		u2=1;
+		u1=0;
+		u3=0;
+		u4=0;
+		u5=0;
+		$(".pic").hide();
+		$(".pic3").hide();
+		$(".pic2").show();
+		$(".pic4").hide();
+		$(".pic5").hide();
+
+	});
+	$("#user3").click(function () {
+		u1=0;
+		u2=0;
+		u4=0;
+		u5=0;
+		u3=1;
+		$(".pic3").show();
+		$(".pic").hide();
+		$(".pic2").hide();
+		$(".pic4").hide();
+		$(".pic5").hide();
+
+	});
+	$("#user4").click(function () {
+
+		u4=1;
+		u1=0;
+		u2=0;
+		u3=0;
+		u5=0;
+		
+		$(".pic4").show();
+		$(".pic").hide();
+		$(".pic2").hide();
+		$(".pic3").hide();
+		$(".pic5").hide();
+
+	});
+	$("#user5").click(function () {
+		u5=1;
+		u1=0;
+		u2=0;
+		u3=0;
+		u4=0;
+		
+		$(".pic5").show();
+		$(".pic").hide();
+		$(".pic2").hide();
+		$(".pic3").hide();
+		$(".pic4").hide();
+
+	});
+
+	$(".dress1").click(function () {
+		d1=1;
+		d2=0;
+		d3=0;
+		d4=0;
+		d5=0;
+		$(".dress2").hide();
+		$(".dress3").hide();
+		$(".dress4").hide();
+		$(".dress5").hide();
+	});
+	$(".dress2").click(function () {
+		d2=1;
+		d1=0;
+		d3=0;
+		d4=0;
+		d5=0;
+		$(".dress1").hide();
+		$(".dress3").hide();
+		$(".dress4").hide();
+		$(".dress5").hide();
+	});
+	$(".dress3").click(function () {
+		d3=1;
+		d1=0;
+		d2=0;
+		d4=0;
+		d5=0;
+		$(".dress2").hide();
+		$(".dress1").hide();
+		$(".dress4").hide();
+		$(".dress5").hide();
+	});
+	$(".dress4").click(function () {
+		d4=1;
+		d1=0;
+		d2=0;
+		d3=0;
+		d5=0;
+		$(".dress2").hide();
+		$(".dress3").hide();
+		$(".dress1").hide();
+		$(".dress5").hide();
+	});
+	$(".dress5").click(function () {
+		d5=1;
+		d1=0;
+		d2=0;
+		d3=0;
+		d4=0;
+		$(".dress2").hide();
+		$(".dress3").hide();
+		$(".dress4").hide();
+		$(".dress1").hide();
+	});
+
+	$("#show_all").click(function () {
+		$(".dress1").show();
+		$(".dress2").show();
+		$(".dress3").show();
+		$(".dress4").show();
+		$(".dress5").show();
+	});
+
+
+	$("#try_on").click(function () {
+		$(".add_cart").show();
+		if (u1==1 && d1==1) 
+		{
+			$(".t1").html("");		
+			$(".f1").show();
+			$(".f2").hide();
+			$(".f3").hide();
+			$(".f4").hide();
+			$(".f5").hide();
+		}
+		else if (u2==1 && d2==1) 
+		{
+			$(".t1").html("");		
+			$(".f1").hide();
+			$(".f2").show();
+			$(".f3").hide();
+			$(".f4").hide();
+			$(".f5").hide();
+		}
+		else if (u3==1 && d3==1) 
+		{
+			$(".t1").html("");		
+			$(".f1").hide();
+			$(".f2").hide();
+			$(".f3").show();
+			$(".f4").hide();
+			$(".f5").hide();
+
+		}
+		else if (u4==1 && d4==1) 
+		{
+			$(".t1").html("");		
+			$(".f1").hide();
+			$(".f2").hide();
+			$(".f3").hide();
+			$(".f4").show();
+			$(".f5").hide();	
+		}
+		else if (u5==1 && d5==1) 
+		{
+			$(".t1").html("");		
+			$(".f1").hide();
+			$(".f2").hide();
+			$(".f3").hide();
+			$(".f4").hide();
+			$(".f5").show();
+		}
+		else 
+		{
+			$(".f1").hide();
+			$(".f2").hide();
+			$(".f3").hide();
+			$(".f4").hide();
+			$(".f5").hide();
+			$(".t1").html("No matched combination");
+		}	
+
+	});
+
+</script>
+
+</body>
+
+</html>
